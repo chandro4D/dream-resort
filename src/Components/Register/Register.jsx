@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
@@ -9,6 +9,8 @@ const Register = () => {
     const [registerError, setRegisterError] = useState("");
     const [success, setSuccess] = useState("");
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+
 
     const { createUser } = useContext(AuthContext)
     console.log(createUser)
@@ -44,6 +46,7 @@ const Register = () => {
                 console.log(result.user);
                 setSuccess("Account Created successfully");
                 alert("Account Created successfully")
+                navigate("/");
             })
             .catch(error => {
                 console.log(error);
@@ -51,10 +54,10 @@ const Register = () => {
             })
     }
     return (
-        <div className="w-[500px] h-[630px] bg-blue-600 ml-[500px] mt-10 mb-10 rounded-xl">
+        <div className="w-[500px] h-[630px] bg-slate-400 ml-[500px] mt-10 mb-10 rounded-xl">
             <div className=" pt-10">
                 <h2 className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
-                <p className="text-center text-xl font-semibold text-black">Login to your account by entering your <br /> mobile number and password</p>
+                <p className="text-center text-xl font-semibold text-black">Register to your account </p>
             </div>
             <form onSubmit={handleRegister} className="pt-8 pl-12">
                 <div className=" w-[400px] h-[50px]">
