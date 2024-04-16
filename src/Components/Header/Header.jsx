@@ -4,9 +4,13 @@ import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
+    console.log(user);
     const handleSignOut = () => {
         logOut()
-            .then()
+            .then(result =>{
+                console.log(result.user);
+                alert("Logout Successfully");
+            })
             .catch()
     }
     const links = <>
@@ -40,8 +44,8 @@ const Header = () => {
                 user ?
                     <div className="flex navbar-end">
                         <div>
-                            <div className=" tooltip tooltip-right" data-tip="hello"  >
-                                <img className="rounded-full w-14" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            <div className=" tooltip tooltip-right" data-tip={user.email }  >
+                                <img className="rounded-full w-14" src="https://web.programming-hero.com/static/media/profileImage.934e5b10.png" />
                             </div>
                         </div>
                         <div className="ml-5">

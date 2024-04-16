@@ -12,15 +12,15 @@ const Register = () => {
     const navigate = useNavigate();
 
 
-    const { createUser } = useContext(AuthContext)
+    const { createUser,setUser } = useContext(AuthContext)
     console.log(createUser)
     const handleRegister = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         const name = e.target.name.value;
-        const PhotoUrl = e.target.PhotoURL.value;
-        console.log(email, password, name, PhotoUrl);
+        const PhotoURL = e.target.PhotoURL.value;
+        console.log(email, password, name, PhotoURL);
 
         if (password.length < 6) {
             setRegisterError('Password should be at least 6 characters');
@@ -41,9 +41,10 @@ const Register = () => {
         setSuccess('');
 
 
-        createUser(email, password, name, PhotoUrl)
+        createUser(email, password, name, PhotoURL)
             .then(result => {
                 console.log(result.user);
+                setUser(result.user)
                 setSuccess("Account Created successfully");
                 alert("Account Created successfully")
                 navigate("/");
