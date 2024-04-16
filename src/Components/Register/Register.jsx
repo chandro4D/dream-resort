@@ -12,7 +12,7 @@ const Register = () => {
     const navigate = useNavigate();
 
 
-    const { createUser,setUser } = useContext(AuthContext)
+    const { createUser,setUser,updateUserProfile } = useContext(AuthContext)
     console.log(createUser)
     const handleRegister = e => {
         e.preventDefault();
@@ -43,10 +43,13 @@ const Register = () => {
 
         createUser(email, password, name, PhotoURL)
             .then(result => {
+                
                 console.log(result.user);
                 setUser(result.user)
                 setSuccess("Account Created successfully");
                 alert("Account Created successfully")
+                updateUserProfile(name,PhotoURL)
+                .then()
                 navigate("/");
             })
             .catch(error => {

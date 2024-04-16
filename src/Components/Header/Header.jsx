@@ -44,8 +44,8 @@ const Header = () => {
                 user ?
                     <div className="flex navbar-end">
                         <div>
-                            <div className=" tooltip tooltip-right" data-tip={user.email }  >
-                                <img className="rounded-full w-14" src="https://web.programming-hero.com/static/media/profileImage.934e5b10.png" />
+                            <div className=" tooltip tooltip-right" data-tip={user.displayName || user.email }  >
+                                <img className="rounded-full w-14" src={user.photoURL || "https://web.programming-hero.com/static/media/profileImage.934e5b10.png" }  />
                             </div>
                         </div>
                         <div className="ml-5">
