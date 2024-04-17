@@ -4,6 +4,7 @@ import Slider from "../Slider/Slider";
 import Choose from "../Choose/Choose";
 import ChoiceFirst from "../ChoiceFirst/ChoiceFirst";
 import SwiperSlider from "../SwiperSlider/SwiperSlider";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -12,6 +13,9 @@ const Home = () => {
 
     return (
         <div className="mt-10">
+            <Helmet>
+                <title>Dream Resorts//Home</title>
+            </Helmet>
             <ChoiceFirst></ChoiceFirst>
             <Slider></Slider>
             <Choose></Choose>

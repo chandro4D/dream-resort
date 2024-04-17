@@ -19,6 +19,7 @@ const Header = () => {
         <li className="mr-3"><Link to="/UpdateProfile">Update Profile</Link></li>
         <li><button><Link to="/login">LOGIN</Link></button></li>
         <li><button><Link to="/Register">Register</Link></button></li>
+        <li><button><Link to="/Facilities">Extra Facilities</Link></button></li>
 
     </>
     return (

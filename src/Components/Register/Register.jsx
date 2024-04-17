@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -59,6 +60,9 @@ const Register = () => {
     }
     return (
         <div className="w-[500px] h-[630px] bg-slate-400 ml-[500px] mt-10 mb-10 rounded-xl">
+            <Helmet>
+                <title>Dream Resorts//Register</title>
+            </Helmet>
             <div className=" pt-10">
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"  className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
                 <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-xl font-semibold text-black">Register to your account </p>

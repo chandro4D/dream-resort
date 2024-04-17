@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 AOS.init();
 
 import {
@@ -19,6 +19,8 @@ import Details from './Components/Details/Details';
 import Register from './Components/Register/Register';
 import FirebaseProvider from './Components/FirebaseProvider/FirebaseProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Facilities from './Components/Facilities/Facilities';
+import { HelmetProvider } from 'react-helmet-async';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/Register",
         element: <Register></Register>
+      },
+      {
+        path: "/Facilities",
+        element: <PrivateRoute><Facilities></Facilities></PrivateRoute>
       }
     ]
   },
@@ -54,8 +60,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <FirebaseProvider>
-      <RouterProvider router={router} />
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
     </FirebaseProvider>
+
   </React.StrictMode>,
 )

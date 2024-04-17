@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 
 
 
@@ -25,6 +27,9 @@ const UpdateProfile = () => {
 
     return (
         <div className="ml-[400px] mt-5 mb-5 ">
+            <Helmet>
+                <title>Dream Resorts//UpdateProfile</title>
+            </Helmet>
             <div className="w-[800px] h-[400px] bg-slate-500 mb-5 rounded-lg">
                 <h2 className="text-center text-3xl font-bold text-emerald-100 pt-5"> YOUR PROFILE</h2>
                 <h2 className="text-center text-2xl font-semibold text-sky-100 pt-4"> Your Name : {user.displayName || "Please Provide Your Name"}</h2>

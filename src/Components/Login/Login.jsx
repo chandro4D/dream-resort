@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -62,9 +63,12 @@ const Login = () => {
     }
     return (
         <div className="w-[500px] h-[600px] bg-gray-400  ml-[500px] mt-10 mb-10 rounded-xl">
+            <Helmet>
+                <title>Dream Resorts//Login</title>
+            </Helmet>
             <div className=" pt-14">
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
-                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className="text-center text-xl font-semibold text-black">Login to your account by entering your <br /> mobile number and password</p>
+                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className="text-center text-xl font-semibold text-black">Login To Your Account By Entering<br /> Your Email and Password</p>
             </div>
             <form onSubmit={handleLogIn} className="pt-10 pl-12">
                 <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className=" w-[400px] h-[50px]">

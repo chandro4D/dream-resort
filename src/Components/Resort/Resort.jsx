@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 
@@ -6,6 +7,7 @@ const Resort = ({ resorts }) => {
     return (
 
         <div  className="card  bg-base-100 shadow-xl mb-14 mr-[40px]">
+            
             <figure><img data-aos="fade-down-right" data-aos-duration="1000"  src={image} /></figure>
             <div className="card-body">
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-3xl font-bold text-black">{title}</h2>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ResortDataHooks from "../Hooks/ResortDataHooks";
+import { Helmet } from "react-helmet-async";
 
 
 const Details = () => {
@@ -20,6 +21,9 @@ const Details = () => {
     const { title, image, segment_name, description, price, status, location, facilities } = singleData || {};
     return (
         <div className="flex mt-20 ml-[160px] mb-20">
+            <Helmet>
+                <title>Dream Resorts//Details</title>
+            </Helmet>
         <div className="bg-slate-400 w-[570px] h-[600px] ">
             <img  className="w-[500px] h-[550px] mt-6 ml-8 rounded-xl" src={image} alt="" />
         </div>
