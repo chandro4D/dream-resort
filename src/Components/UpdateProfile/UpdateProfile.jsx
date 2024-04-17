@@ -1,10 +1,27 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+import { useNavigate } from "react-router-dom";
 
 
 
 const UpdateProfile = () => {
-    const { user } = useContext(AuthContext);
+    const { user,updateUserProfile } = useContext(AuthContext);
+
+    const navigate = useNavigate();
+
+
+    const handleUpdateProfile = (e) =>{
+        e.preventDefault();
+        const name = e.target.name.value;
+        const PhotoURL = e.target.PhotoURL.value;
+        console.log(name,PhotoURL)
+        updateUserProfile(name,PhotoURL)
+        
+        alert("Update Your Profile successfully")
+        navigate("/");
+
+
+    }
 
     return (
         <div className="ml-[400px] mt-5 mb-5 ">
@@ -16,7 +33,7 @@ const UpdateProfile = () => {
             </div>
             <div className="w-[800px] h-[350px] bg-slate-500 rounded-lg">
                 <h2 className="text-center text-3xl font-bold text-emerald-100 pt-8">UPDATE YOUR PROFILE</h2>
-                <form className="ml-[200px] mt-10">
+                <form onSubmit={handleUpdateProfile} className="ml-[200px] mt-10">
                     <div className=" w-[400px] h-[50px]">
                         <input className="w-full h-full rounded-lg text-center" type="name" placeholder="Your Name" required name="name" />
                     </div>

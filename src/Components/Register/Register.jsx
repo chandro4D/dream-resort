@@ -60,24 +60,24 @@ const Register = () => {
     return (
         <div className="w-[500px] h-[630px] bg-slate-400 ml-[500px] mt-10 mb-10 rounded-xl">
             <div className=" pt-10">
-                <h2 className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
-                <p className="text-center text-xl font-semibold text-black">Register to your account </p>
+                <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900"  className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
+                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-xl font-semibold text-black">Register to your account </p>
             </div>
             <form onSubmit={handleRegister} className="pt-8 pl-12">
-                <div className=" w-[400px] h-[50px]">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className=" w-[400px] h-[50px]">
                     <input className="w-full h-full rounded-lg text-center" type="name" placeholder="Your Name" required name="name" />
                 </div>
                 <br />
-                <div className=" w-[400px] h-[50px]">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className=" w-[400px] h-[50px]">
                     <input className="w-full h-full rounded-lg text-center" type="email" placeholder="Your Email" required name="email" />
                 </div>
                 <br />
-                <div className="flex">
-                    <div>
+                <div  className="flex">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
                         <input className="text-black rounded-lg text-center   w-[400px] h-[50px]" placeholder="password" required
                             type={showPassword ? "text" : "password"} name="password" />
                     </div>
-                    <div className="mt-3  ">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400" className="mt-3  ">
                         <span className="" onClick={() => { setShowPassword(!showPassword) }}>
                             {
                                 showPassword ? <FaEyeSlash className="w-10 h-5"></FaEyeSlash> : <FaEye className="w-10 h-5"></FaEye>
@@ -88,11 +88,11 @@ const Register = () => {
 
 
                 <br />
-                <div className=" w-[400px] h-[50px] ">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400" className=" w-[400px] h-[50px] ">
                     <input className="w-full h-full text-center rounded-lg" type="text" placeholder="Enter Your Photo URL" required name="PhotoURL" />
                 </div>
                 <br />
-                <div className=" w-[400px]  h-[50px] bg-lime-400 rounded-2xl">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" className=" w-[400px]  h-[50px] bg-lime-400 rounded-2xl">
                     <button className="w-full h-full text-white"> Register</button>
                 </div>
             </form>
@@ -104,7 +104,7 @@ const Register = () => {
             }
             <br />
             <div>
-                <h3 className="text-center text-xl font-medium text-amber-600">Already Have An Account? <Link to={"/login"}><span className="text-lime-300" >LOGIN</span></Link></h3>
+                <h3   className="text-center text-xl font-medium text-amber-600">Already Have An Account? <Link to={"/login"}><span className="text-lime-300" >LOGIN</span></Link></h3>
             </div>
         </div>
     )

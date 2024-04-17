@@ -1,4 +1,4 @@
-                                         ***Welcome to [Dream Resorts]***
+                                         ***Welcome to [Dream Resorts(WEBSITE NAME)]***
                                      ----------------------------------------
 
               
@@ -23,15 +23,19 @@
                         community and embark on a journey of discovery today!
 
 
-                                  *** Some Important Link***
-                            ------------------------------------
-                        Live Link : https://stalwart-naiad-7cab1a.netlify.app
-             GitHub Link :https://github.com/programming-hero-web-course-4/b9a8-book-vibe-chandro4D
+                                         *** Some Important Link***
+                                    ------------------------------------
+                             Live Link : https://assignment-nine-333c1.web.app
+
+        GitHub Link :  https://github.com/programming-hero-web-course-4/b9a9-real-estate-chandro4D 
 
 
                                         Npm Packages That I Use In My Web
                                       -------------------------------------
-
+                                      
+                                                  1.AOS PACKAGE
+                                                  2.SWIPER SLIDE
+                                                  3.ANIMATE.CSS
 
 
 

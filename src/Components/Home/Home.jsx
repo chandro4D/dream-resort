@@ -3,6 +3,7 @@ import Resort from "../Resort/Resort";
 import Slider from "../Slider/Slider";
 import Choose from "../Choose/Choose";
 import ChoiceFirst from "../ChoiceFirst/ChoiceFirst";
+import SwiperSlider from "../SwiperSlider/SwiperSlider";
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
                 }
 
             </div>
+            <SwiperSlider></SwiperSlider>
         </div>
     );
 };
