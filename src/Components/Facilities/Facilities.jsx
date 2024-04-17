@@ -7,8 +7,8 @@ const Facilities = () => {
                 <title>Dream Resorts//Facilities</title>
             </Helmet>
             <div>
-                <div className="animate__animated animate__bounce animate__delay-4s animate__slower text-4xl text-center text-slate-950 font-bold mt-10 mb-10">
-                    <h2>THINGS TO DO</h2>
+                <div data-aos="flip-down" data-aos-duration="1000" className="animate__animated  animate__delay-4s animate__swing text-4xl text-center text-slate-950 font-bold mt-10 mb-10">
+                    <h2 data-aos="flip-down" data-aos-duration="1000">THINGS TO DO</h2>
                     <p className="text-yellow-600 mt-4 text-2xl">ENJOY YOUR TIME WITH PLEASURE</p>
                 </div>
                 <div className="flex ml-28 mt-20">
