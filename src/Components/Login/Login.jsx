@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { Helmet } from "react-helmet-async";
+import { FcGoogle } from "react-icons/fc";
+import { ImGithub } from "react-icons/im";
 
 
 
@@ -93,12 +95,12 @@ const Login = () => {
                     Continue With
                 </div>
             
-                <div className="flex ml-40 mt-6">
+                <div className="flex ml-[190px] mt-6">
                     <div>
-                        <button onClick={handleGoogleLogin} className="btn mr-5 bg-lime-400 w-20 h-10 text-center pt-1 rounded-md">Google</button>
+                        <button onClick={handleGoogleLogin} className=" mr-8    text-center pt-1 "><FcGoogle className="w-10 h-10"></FcGoogle></button>
                     </div>
                     <div>
-                        <button onClick={handleGithubLogin} className=" btn mr-5 bg-lime-400 w-20 h-10 text-center pt-1 rounded-md">Github</button>
+                        <button onClick={handleGithubLogin} className="   text-center pt-1 rounded-md"><ImGithub className="w-10 h-10"></ImGithub></button>
                     </div>
                 </div>
             </div>

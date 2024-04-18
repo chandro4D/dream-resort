@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import SwiperSlider from "../SwiperSlider/SwiperSlider";
 
 const Facilities = () => {
     return (
@@ -28,6 +29,8 @@ const Facilities = () => {
                         <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className="text-xl text-yellow-600  font-medium text-center">The Water Is Very Clean,Freash And Safe That best For Your Health</p>
                     </div>
                 </div>
+                <h3 className="text-slate-950 text-center font-bold mb-9 text-4xl">YOU CAN SEE OUR SOME RESORTS</h3>
+                <SwiperSlider></SwiperSlider>
             </div>
         </div>
     );

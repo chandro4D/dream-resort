@@ -12,7 +12,7 @@ const Resort = ({ resorts }) => {
             <div className="card-body">
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-3xl font-bold text-black">{title}</h2>
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className="text-center text-2xl font-bold text-amber-500">{segment_name}</h2>
-                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className="text-xl font-normal text-center text-zinc-800">{description}</p>
+                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className="text-xl font-medium text-center text-lime-700">{description}</p>
                 <div className="divider"></div>
                 <div className="flex text-xl font-bold text-center text-black">
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className="mr-[250px]">
