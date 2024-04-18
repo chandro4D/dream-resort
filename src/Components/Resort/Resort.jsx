@@ -6,7 +6,7 @@ const Resort = ({ resorts }) => {
     const { title, image, id, segment_name, description, price, status, location, facilities } = resorts;
     return (
 
-        <div  className="card  bg-base-100 shadow-xl mb-14 mr-[40px]">
+        <div  className="card  bg-base-100 shadow-xl mb-14 lg:mr-[40px]  sm:mr-[0px]">
             
             <figure><img data-aos="fade-down-right" data-aos-duration="1000"  src={image} /></figure>
             <div className="card-body">
@@ -15,7 +15,7 @@ const Resort = ({ resorts }) => {
                 <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className="text-xl font-medium text-center text-lime-700">{description}</p>
                 <div className="divider"></div>
                 <div className="flex text-xl font-bold text-center text-black">
-                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className="mr-[250px]">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className="lg:mr-[250px] sm:mr-2 ">
                         <h2>{price}</h2>
                     </div>
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400" className="text-amber-500">

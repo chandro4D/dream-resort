@@ -12,7 +12,7 @@ const Facilities = () => {
                     <h2 data-aos="flip-down" data-aos-duration="1000">THINGS TO DO</h2>
                     <p className="text-yellow-600 mt-4 text-2xl">ENJOY YOUR TIME WITH PLEASURE</p>
                 </div>
-                <div className="flex ml-28 mt-20">
+                <div className="lg:flex sm:grid-cols-1 lg:ml-28 sm:ml-0 mt-20">
                     <div className="w-[400px] h-[500px] mr-5" >
                         <img data-aos="zoom-out-down" src="https://i.ibb.co/bBR9XN0/pexels-julia-m-cameron-8841157-1.jpg" />
                         <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-2xl text-slate-950 font-bold text-center mt-5 mb-2">OUTDOOR BBQ</h2>

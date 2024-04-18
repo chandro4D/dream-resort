@@ -20,7 +20,7 @@ const Home = () => {
             <Slider></Slider>
             <Choose></Choose>
 
-            <div className="grid grid-cols-2 mr-[80px] ml-[140px]">
+            <div className=" lg:grid lg:grid-cols-2 lg:mr-[80px] lg:ml-[140px] sm:grid-cols-1 sm:ml-[60px] sm:mr-[80px]">
                 {
                     resorts.map(resort => <Resort key={resort.id} resorts={resort}></Resort>)
                 }

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
-import { Navigation, Autoplay } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 import "../CssFile/slider.css"
@@ -11,16 +11,20 @@ const SwiperSlider = () => {
     return (
         <div className='mb-10 '>
             <div className=''>
-                <Swiper className='w-[1300px] rounded-xl'
+                <Swiper className='lg:w-[1300px] rounded-xl sm:w-[500px] lg:h-[560px] sm:h-[200px] '
                     navigation={true}
-                    modules={[Navigation, Autoplay]}
+                    modules={[Navigation, Autoplay,Pagination]}
                     loop={true}
+                    
                     autoplay={
                         {
                             delay: 2000
 
                         }
                     }
+                    pagination={{
+                        clickable: true,
+                      }}
                 >
                     <SwiperSlide>
                         <div className='slide slide1'>

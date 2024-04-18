@@ -64,7 +64,7 @@ const Login = () => {
         })
     }
     return (
-        <div className="w-[500px] h-[600px] bg-gray-400  ml-[500px] mt-10 mb-10 rounded-xl">
+        <div className="lg:w-[500px] sm:w-[350px] lg:h-[600px] sm:h-[500px] bg-gray-400  lg:ml-[500px] mt-10 mb-10 rounded-xl sm:ml-[0px]">
             <Helmet>
                 <title>Dream Resorts//Login</title>
             </Helmet>
@@ -72,16 +72,16 @@ const Login = () => {
                 <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" className="text-center text-2xl font-bold text-white mb-2">WELCOME TO DREAM RESORTS</h2>
                 <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" className="text-center text-xl font-semibold text-black">Login To Your Account By Entering<br /> Your Email and Password</p>
             </div>
-            <form onSubmit={handleLogIn} className="pt-10 pl-12">
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className=" w-[400px] h-[50px]">
+            <form onSubmit={handleLogIn} className="pt-10 lg:pl-12 sm:pl-0">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200" className=" lg:w-[400px] sm:w-[250px] h-[50px]">
                     <input className="w-full h-full rounded-lg text-center" type="email" placeholder="Your Email" required name="email" />
                 </div>
                 <br />
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className=" w-[400px] h-[50px] ">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300" className=" lg:w-[400px] sm:w-[250px] h-[50px] ">
                     <input className="w-full h-full text-center rounded-lg" type="password" placeholder="Enter Your Password" required name="password" />
                 </div>
                 <br />
-                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400" className=" w-[400px]  h-[50px] bg-lime-400 rounded-2xl">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400" className=" lg:w-[400px] sm:w-[250px]  h-[50px] bg-lime-400 rounded-2xl">
                     <button className="w-full h-full text-white"> LOGIN</button>
                 </div>
             </form>
@@ -95,8 +95,8 @@ const Login = () => {
                     Continue With
                 </div>
             
-                <div className="flex ml-[190px] mt-6">
-                    <div>
+                <div className="flex ml-[190px]   mt-6">
+                    <div  >
                         <button onClick={handleGoogleLogin} className=" mr-8    text-center pt-1 "><FcGoogle className="w-10 h-10"></FcGoogle></button>
                     </div>
                     <div>
